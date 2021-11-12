@@ -1,8 +1,6 @@
 ===
 
 # Hello Cooking! CHANGE THE TITLE
-
-does this work cookies
  
 ## Table of Contents
 1. [Overview](#Overview)
@@ -59,23 +57,16 @@ We want to develop a mobile app that will provide its users with functionalities
 * Registration Screen
    * User can register a new account.
    * User can select their dietary restrictions, nutrition goals, time commitment, current ingredients.
+* Recipe Section Screen
+   * User can view recipes of a certain dietary restriction
+* Recipe Detail Screen 
+   * User can see more information about a certain recipe (list of ingredients, step by step process of cooking a meal, photo of the final meal)
+   * User can mark what kind of recipes they made and get "points" for it
 * Recipe Feed 
    * User can see different recipes
    * The system will recommend relevant recipes based on user's current ingredients, dietary restrictions, and time commitment.
    * User can see their number of points
    * User can logout
-* Recipe Section Screen
-   * User can view recipes of a certain dietary restriction
-* Social Media Feed
-   * User can see other users' posts
-   * User can comment on other users' posts
-   * User can like other users' posts
-   * User can logout
-* Recipe Detail Screen
-   * User can see more information about a certain recipe (list of ingredients, step by step process of cooking a meal, photo of the final meal)
-   * User can mark what kind of recipes they made and get "points" for it
-* Creation Screen
-   * User can create a post with the photo of the meal and caption it
 * Profile Screen
    * Allows user to upload a photo and fill in "bio" information that is interesting to them and others
    * User can mark what kind of recipes they made and get "points" for it.
@@ -88,21 +79,38 @@ We want to develop a mobile app that will provide its users with functionalities
    * User can logout
 
 
+
+* Social Media Feed (Optional)
+   * User can see other users' posts
+   * User can comment on other users' posts
+   * User can like other users' posts
+   * User can logout
+* Creation Screen
+   * User can create a post with the photo of the meal and caption it
+* Fridge List Screen
+   * User can input new ingredients to the list.
+   * User can see their number of points and level.
+   * User can logout
+
+
    
 
 ### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)
-* 
-Optional:
-* Music/Encounter Queue
-* Discover (Top Choices)
+* Recipe Feed
+* Social Media Feed
+* Fridge List
+* Profile
+
 
 **Flow Navigation** (Screen to Screen)
-* Forced Log-in -> Account creation if no log in is available
-* Music Selection (Or Queue if Optional) -> Jumps to Chat
-* Profile -> Text field to be modified. 
-* Settings -> Toggle settings
+* Login Screen with two choices --> Sign in or Register
+* if Sign in:
+* Segway into Recipe Section ( A feed of all of your interesting recipes )
+* Segway to Recipe Detail Screen if you choose one of buttons on Recipe Section
+* Segway from Social Media Feed to Creation Screen
+* Segway into Settings Screen from Profile Tab.
 
 ## Wireframes
 <img src="https://i.imgur.com/9CrjH1K.jpg" width=800><br>
