@@ -49,16 +49,19 @@ Our target audience is college students who want to learn how to cook healthy me
    * User can stay logged in across restarts
 * Registration Screen
    * User can register a new account.
-* Recipe Section Screen
+* Recipe Section Result Screen
    * User can view recipes of a certain dietary restriction
 * Recipe Detail Screen 
    * User can see more information about a certain recipe (list of ingredients, step by step process of cooking a meal, photo of the final meal)
    * User can mark what kind of recipes they made and get "points" for it
 * Recipe Feed 
    * User can see different recipes
-   * The system will recommend relevant recipes based on user's current ingredients, dietary restrictions, and time commitment.
-   * User can see their number of points
+   * User can filter the recipes based on their dietary restrictions, courses.
    * User can logout
+* Recipe Search Result
+   * User can view the list of recipes that were generated after they clicked the Search button.
+* Recipe Generate Result
+   * User can view the list of recipes that were generated after they clicked the Generate by Ingredients button.
 * Profile Screen
    * Allows user to upload a photo and fill in "bio" information that is interesting to them and others
    * User can select their dietary restrictions, nutrition goals, time commitment, current ingredients.
@@ -93,7 +96,7 @@ Our target audience is college students who want to learn how to cook healthy me
 * Segway into Recipe Feed if you choose a particular course on Recipe Section (breakfast / lunch / dinner / dessert, etc.)
 * Segway to Recipe Detail Screen if you choose one of buttons on Recipe Feed
 
-* Recipe Feed -> Recipe Detail Result (you choose an arbirtrary recipe)
+* Recipe Feed -> Recipe Detail Result (you choose an arbitrary recipe)
 * Recipe Feed -> Recipe Search Result (you search for a recipe)
 * Fridge List -> Save Button
 * Recipe Feed -> Recipe Generate Result
