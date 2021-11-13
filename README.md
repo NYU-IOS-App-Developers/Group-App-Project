@@ -91,12 +91,19 @@ Our target audience is college students who want to learn how to cook healthy me
 
 **Flow Navigation** (Screen to Screen)
 * Login Screen with two choices --> Sign in or Register
-* if Sign in:
+* Login Screen -> Register -> Recipe Feed
+* or
+* Login Screen -> Recipe Feed
 * Segway into Recipe Section Screen ( A feed of all of your interesting recipes grouped by courses)
 * Segway into Recipe Feed if you choose a particular course on Recipe Section (breakfast / lunch / dinner / dessert, etc.)
 * Segway to Recipe Detail Screen if you choose one of buttons on Recipe Feed
-* Segway from Social Media Feed to Creation Screen
-* Segway into Settings Screen from Profile Tab.
+
+* Recipe Feed -> Recipe Detail Result (you choose an arbirtrary recipe)
+* Recipe Feed -> Recipe Search Result (you search for a recipe)
+* Fridge List -> Save Button
+* Recipe Feed -> Recipe Generate Result
+* Recipe Feed -> Recipe Section
+* Social Media Feed -> Creation Screen
 
 ## Wireframes
 <img src="https://i.imgur.com/9CrjH1K.jpg" width=800><br>
