@@ -1,6 +1,6 @@
 ===
 
-# Hello Cooking! CHANGE THE TITLE
+# Hello Cooking!
  
 ## Table of Contents
 1. [Overview](#Overview)
