@@ -49,7 +49,6 @@ Our target audience is college students who want to learn how to cook healthy me
    * User can stay logged in across restarts
 * Registration Screen
    * User can register a new account.
-   * User can select their dietary restrictions, nutrition goals, time commitment, current ingredients.
 * Recipe Section Screen
    * User can view recipes of a certain dietary restriction
 * Recipe Detail Screen 
@@ -62,22 +61,18 @@ Our target audience is college students who want to learn how to cook healthy me
    * User can logout
 * Profile Screen
    * Allows user to upload a photo and fill in "bio" information that is interesting to them and others
-   * User can mark what kind of recipes they made and get "points" for it.
+   * User can select their dietary restrictions, nutrition goals, time commitment, current ingredients.
    * User can track their progress based on the points they accumulated over time.
-* Settings Screen
-   * Lets people change language, and app notification settings.
 * Fridge List Screen
-   * User can input new ingredients to the list.
-   * User can see their number of points and level.
+   * User can edit and save the list of ingredients they possess.
    * User can logout
 
 * Social Media Feed (Optional)
    * User can see other users' posts
    * User can comment on other users' posts
    * User can like other users' posts
-   * User can logout
 * Creation Screen
-   * User can create a post with the photo of the meal and caption it
+   * User can create a post with the photo of the meal and caption it.
 
 
 ### 3. Navigation
