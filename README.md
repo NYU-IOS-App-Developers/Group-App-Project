@@ -9,24 +9,17 @@
 
 ## Overview
 ### Description
-Many young people with a low budget have limited knowledge of how to cook for themselves. They either cook similar meals every day or get grab-and-go meals, which are considered unhealthy. Our target audience is college students who want to learn how to cook for themselves.
-
+Many young people with a low budget have limited knowledge of how to cook for themselves. They either cook similar meals every day or get grab-and-go meals, which are considered unhealthy. 
 We want to develop a mobile app that will provide its users with functionalities to learn how to cook and track their progress. The app will give recipe recommendations based on user's present ingredients, dietary restrictions, time commitment and other personal preferences. 
-
-
-
-// We want to build a community of people who encourage each other to cook new meals and eat healthily. 
-
-
-
+Our target audience is college students who want to learn how to cook healthy meals for themselves.
 
 ### App Evaluation
-- **Category:** Social Networking / Music
+- **Category:** Cooking / Social Media
 - **Mobile:** This app would be primarily developed for mobile but would perhaps be just as viable on a computer, such as tinder or other similar apps. Functionality wouldn't be limited to mobile devices, however mobile version could potentially have more features.
-- **Story:** Analyzes users music choices, and connects them to other users with similar choices. The user can then decide to message this person and befriend them if wanted.
-- **Market:** Any individual could choose to use this app, and to keep it a safe environment, people would be organized into age groups.
-- **Habit:** This app could be used as often or unoften as the user wanted depending on how deep their social life is, and what exactly they're looking for.
-- **Scope:** First we would start with pairing people based on music taste, then perhaps this could evolve into a music sharing application as well to broaden its usage. Large potential for use with spotify, apple music, or other music streaming applications.
+- **Story:** The app generates recipes based on user's dietary restrictions, present ingredients, and time commitment. User can earn points by cooking a recommended meal and track their own progress over time. User can like other people's posts and comment on them.
+- **Market:** Any individual could choose to use this app; however, we focus on college students who are 17-22 years old and do not use their universities' meal plans.
+- **Habit:** This app could be used whenever user wants to cook for themselves. Typically, user will open the app at least once per day to get learn new recipes.
+- **Scope:** First, we would start with generating recipe recommendations for NYU students. Users would give kudos to each other for learning new recipes. This could evolve into a gamified social media application where users can achieve different culinary levels, send messages, create groups, and organize cooking events in their neighborhood. 
 
 ## Product Spec
 ### 1. User Stories (Required and Optional)
@@ -78,8 +71,6 @@ We want to develop a mobile app that will provide its users with functionalities
    * User can see their number of points and level.
    * User can logout
 
-
-
 * Social Media Feed (Optional)
    * User can see other users' posts
    * User can comment on other users' posts
@@ -87,13 +78,7 @@ We want to develop a mobile app that will provide its users with functionalities
    * User can logout
 * Creation Screen
    * User can create a post with the photo of the meal and caption it
-* Fridge List Screen
-   * User can input new ingredients to the list.
-   * User can see their number of points and level.
-   * User can logout
 
-
-   
 
 ### 3. Navigation
 
@@ -107,8 +92,9 @@ We want to develop a mobile app that will provide its users with functionalities
 **Flow Navigation** (Screen to Screen)
 * Login Screen with two choices --> Sign in or Register
 * if Sign in:
-* Segway into Recipe Section ( A feed of all of your interesting recipes )
-* Segway to Recipe Detail Screen if you choose one of buttons on Recipe Section
+* Segway into Recipe Section Screen ( A feed of all of your interesting recipes grouped by courses)
+* Segway into Recipe Feed if you choose a particular course on Recipe Section (breakfast / lunch / dinner / dessert, etc.)
+* Segway to Recipe Detail Screen if you choose one of buttons on Recipe Feed
 * Segway from Social Media Feed to Creation Screen
 * Segway into Settings Screen from Profile Tab.
 
