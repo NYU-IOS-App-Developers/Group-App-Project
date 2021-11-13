@@ -53,14 +53,12 @@ Our target audience is college students who want to learn how to cook healthy me
    * User can view recipes of a certain dietary restriction
 * Recipe Detail Screen 
    * User can see more information about a certain recipe (list of ingredients, step by step process of cooking a meal, photo of the final meal)
-   * User can mark what kind of recipes they made and get "points" for it
 * Recipe Feed 
    * User can see different recipes
    * User can filter the recipes based on their dietary restrictions, courses.
-   * User can logout
-* Recipe Search Result
+* Recipe Search Result Screen
    * User can view the list of recipes that were generated after they clicked the Search button.
-* Recipe Generate Result
+* Recipe Generate Result Screen
    * User can view the list of recipes that were generated after they clicked the Generate by Ingredients button.
 * Profile Screen
    * Allows user to upload a photo and fill in "bio" information that is interesting to them and others
@@ -68,7 +66,6 @@ Our target audience is college students who want to learn how to cook healthy me
    * User can track their progress based on the points they accumulated over time.
 * Fridge List Screen
    * User can edit and save the list of ingredients they possess.
-   * User can logout
 
 * Social Media Feed (Optional)
    * User can see other users' posts
@@ -104,10 +101,5 @@ Our target audience is college students who want to learn how to cook healthy me
 * Social Media Feed -> Creation Screen
 
 ## Wireframes
-<img src="https://i.imgur.com/9CrjH1K.jpg" width=800><br>
+<img src="https://i.imgur.com/2vFN8hC.gif" width=800><br>
 
-### [BONUS] Digital Wireframes & Mockups
-<img src="https://i.imgur.com/lYHn37F.jpg" height=200>
-
-### [BONUS] Interactive Prototype
-<img src="https://i.imgur.com/AiKfE5g.gif" width=200>
