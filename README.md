@@ -101,5 +101,5 @@ Our target audience is college students who want to learn how to cook healthy me
 * Social Media Feed -> Creation Screen
 
 ## Wireframes
-<img src="https://i.imgur.com/2vFN8hC.gif" width=800><br>
+<img src="https://i.imgur.com/2vFN8hC.gif" width=400><br>
 
