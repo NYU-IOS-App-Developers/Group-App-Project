@@ -102,7 +102,7 @@ Our target audience is college students who want to learn how to cook healthy me
 
 ### 4. Networking
 * Login Screen
-  * (
+  * (Read/GET) Query logged in user object (if already logged in)
 * Registration Screen
   * (Create/POST) Create a new user that information will be associated with
 * Recipe Section Result Screen
@@ -131,7 +131,7 @@ Our target audience is college students who want to learn how to cook healthy me
   * (Create/POST) Create a new comment on a post
   * (Delete) Delete existing comment 
 * Creation Screen
-  * (Create/POST) Create a new post object
+  * (Create/POST) Create a new post object with caption
 
 ## Wireframes
 <img src="https://i.imgur.com/2vFN8hC.gif" width=400><br>
