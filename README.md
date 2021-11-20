@@ -183,7 +183,6 @@ Our target audience is college students who want to learn how to cook healthy me
   * (Read/GET) Query different section thumbnails and text about different recipes
 * Recipe Search Result Screen
   * (Read/GET) Search for all recipes that has given search phrase in title of meal
-  * (Read/GET) Read search result and query different recipes based on search result
 * Recipe Generate Result Screen
   * (Read/GET) Query different recipes based on list of ingredients from fridge list
 * Profile Screen
@@ -191,10 +190,39 @@ Our target audience is college students who want to learn how to cook healthy me
   * (Read/GET) Query information about user XP level and points
   * (Update/PUT) Update user profile image
   * (Update/PUT) Update user bio
-  * (Update/PUT) Update user dietary restrictions, nutrition goals, time commitment, current ingredients
+    let query = PFQuery(className:"User")
+query.getObjectInBackground(withId: "xWMyZEGZ") { (User: PFObject?, error: Error?) in
+    if let error = error {
+        print(error.localizedDescription)
+    } else if let User = User {
+        User["bio"] = cell.bioLabel.text
+        User.saveInBackground()
+    }
+}
+  * (Update/PUT) Update user dietary restrictions, nutrition goals, time commitment
+    let query = PFQuery(className:"User")
+query.getObjectInBackground(withId: "xWMyZEGZ") { (User: PFObject?, error: Error?) in
+    if let error = error {
+        print(error.localizedDescription)
+    } else if let User = User {
+        User["dietRestrict"] = cell.dietaryRestrictions.text
+        User["nutritionGoal"] = cell.nutritionGoal.text
+        User["timeCommitement"] = cell.timeCommit.text
+        User.saveInBackground()
+    }
+}
 * Fridge List Screen
   * (Read/GET) Query list of ingredient and quantity user has
   * (Update/PUT) User can add a new ingredient and/or change the quantity
+      let query = PFQuery(className:"User")
+query.getObjectInBackground(withId: "xWMyZEGZ") { (User: PFObject?, error: Error?) in
+    if let error = error {
+        print(error.localizedDescription)
+    } else if let User = User {
+        User["ingredients"].append([cell.newIngredient.text, cell.quantity.text])
+        User.saveInBackground()
+    }
+}
 * Social Media Feed (Optional)
   * (Read/GET) Query all posts by all users
   * (Create/POST) Create a new like on a post
@@ -203,6 +231,8 @@ Our target audience is college students who want to learn how to cook healthy me
   * (Delete) Delete existing comment 
 * Creation Screen
   * (Create/POST) Create a new post object with caption
+
+
 
 ## Wireframes
 <img src="https://i.imgur.com/2vFN8hC.gif" width=400><br>
