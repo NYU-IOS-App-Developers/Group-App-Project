@@ -100,6 +100,39 @@ Our target audience is college students who want to learn how to cook healthy me
 * Recipe Feed -> Recipe Section
 * Social Media Feed -> Creation Screen
 
+### 4. Networking
+* Login Screen
+  * (
+* Registration Screen
+  * (Create/POST) Create a new user that information will be associated with
+* Recipe Section Result Screen
+  * (Read/GET) Query recipes of a specific section of food according to a diety retsriction
+* Recipe Detail Screen 
+  * (Read/GET) Query title, picture, ingredients, and steps about a specific recipe
+* Recipe Feed 
+  * (Read/GET) Query different section thumbnails and text about different recipes
+* Recipe Search Result Screen
+  * (Read/GET) Read search result and query different recipes based on search result
+* Recipe Generate Result Screen
+  * (Read/GET) Query different recipes based on list of ingredients from fridge list
+* Profile Screen
+  * (Read/GET) Query information about logged in user object
+  * (Read/GET) Query information about user XP level and points
+  * (Update/PUT) Update user profile image
+  * (Update/PUT) Update user bio
+  * (Update/PUT) Update user dietary restrictions, nutrition goals, time commitment, current ingredients
+* Fridge List Screen
+  * (Read/GET) Query list of ingredient and quantity user has
+  * (Update/PUT) User can add a new ingredient and/or change the quantity
+* Social Media Feed (Optional)
+  * (Read/GET) Query all posts by all users
+  * (Create/POST) Create a new like on a post
+  * (Delete) Delete existing like on post
+  * (Create/POST) Create a new comment on a post
+  * (Delete) Delete existing comment 
+* Creation Screen
+  * (Create/POST) Create a new post object
+
 ## Wireframes
 <img src="https://i.imgur.com/2vFN8hC.gif" width=400><br>
 
