@@ -191,7 +191,7 @@ Our target audience is college students who want to learn how to cook healthy me
   * (Update/PUT) Update user profile image
   * (Update/PUT) Update user bio
   
-  '''
+  ```
     let query = PFQuery(className:"User")
 query.getObjectInBackground(withId: "xWMyZEGZ") { (User: PFObject?, error: Error?) in
     if let error = error {
@@ -201,9 +201,9 @@ query.getObjectInBackground(withId: "xWMyZEGZ") { (User: PFObject?, error: Error
         User.saveInBackground()
     }
 }
-  '''
+  ```
   * (Update/PUT) Update user dietary restrictions, nutrition goals, time commitment
-  '''
+  ```
     let query = PFQuery(className:"User")
 query.getObjectInBackground(withId: "xWMyZEGZ") { (User: PFObject?, error: Error?) in
     if let error = error {
@@ -215,12 +215,12 @@ query.getObjectInBackground(withId: "xWMyZEGZ") { (User: PFObject?, error: Error
         User.saveInBackground()
     }
 }
-  '''
+  ```
 
 * Fridge List Screen
   * (Read/GET) Query list of ingredient and quantity user has
   * (Update/PUT) User can add a new ingredient and/or change the quantity
-  '''
+  ```
       let query = PFQuery(className:"User")
 query.getObjectInBackground(withId: "xWMyZEGZ") { (User: PFObject?, error: Error?) in
     if let error = error {
@@ -230,7 +230,7 @@ query.getObjectInBackground(withId: "xWMyZEGZ") { (User: PFObject?, error: Error
         User.saveInBackground()
     }
 }
-  '''
+  ```
 * Social Media Feed (Optional)
   * (Read/GET) Query all posts by all users
   * (Create/POST) Create a new like on a post
