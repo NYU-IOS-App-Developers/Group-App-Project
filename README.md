@@ -190,6 +190,7 @@ Our target audience is college students who want to learn how to cook healthy me
   * (Read/GET) Query information about user XP level and points
   * (Update/PUT) Update user profile image
   * (Update/PUT) Update user bio
+  
     let query = PFQuery(className:"User")
 query.getObjectInBackground(withId: "xWMyZEGZ") { (User: PFObject?, error: Error?) in
     if let error = error {
@@ -211,6 +212,7 @@ query.getObjectInBackground(withId: "xWMyZEGZ") { (User: PFObject?, error: Error
         User.saveInBackground()
     }
 }
+
 * Fridge List Screen
   * (Read/GET) Query list of ingredient and quantity user has
   * (Update/PUT) User can add a new ingredient and/or change the quantity
