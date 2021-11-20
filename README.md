@@ -192,40 +192,43 @@ Our target audience is college students who want to learn how to cook healthy me
   * (Update/PUT) Update user bio
   
 ```    let query = PFQuery(className:"User")
-```query.getObjectInBackground(withId: "xWMyZEGZ") { (User: PFObject?, error: Error?) in
-```    if let error = error {
-```        print(error.localizedDescription)
-```    } else if let User = User {
-```        User["bio"] = cell.bioLabel.text
-```        User.saveInBackground()
-```    }
-```}
+query.getObjectInBackground(withId: "xWMyZEGZ") { (User: PFObject?, error: Error?) in
+    if let error = error {
+        print(error.localizedDescription)
+    } else if let User = User {
+        User["bio"] = cell.bioLabel.text
+        User.saveInBackground()
+    }
+}
+```
   * (Update/PUT) Update user dietary restrictions, nutrition goals, time commitment
 ```    let query = PFQuery(className:"User")
-```query.getObjectInBackground(withId: "xWMyZEGZ") { (User: PFObject?, error: Error?) in
-```    if let error = error {
-```        print(error.localizedDescription)
-```    } else if let User = User {
-```        User["dietRestrict"] = cell.dietaryRestrictions.text
-```        User["nutritionGoal"] = cell.nutritionGoal.text
-```        User["timeCommitement"] = cell.timeCommit.text
-```        User.saveInBackground()
-```    }
-```}
+query.getObjectInBackground(withId: "xWMyZEGZ") { (User: PFObject?, error: Error?) in
+    if let error = error {
+        print(error.localizedDescription)
+    } else if let User = User {
+        User["dietRestrict"] = cell.dietaryRestrictions.text
+        User["nutritionGoal"] = cell.nutritionGoal.text
+        User["timeCommitement"] = cell.timeCommit.text
+        User.saveInBackground()
+    }
+}
+```
   
 
 * Fridge List Screen
   * (Read/GET) Query list of ingredient and quantity user has
   * (Update/PUT) User can add a new ingredient and/or change the quantity
 ```      let query = PFQuery(className:"User")
-```query.getObjectInBackground(withId: "xWMyZEGZ") { (User: PFObject?, error: Error?) in
-```    if let error = error {
-```        print(error.localizedDescription)
-```    } else if let User = User {
-```        User["ingredients"].append([cell.newIngredient.text, cell.quantity.text])
-```        User.saveInBackground()
-```    }
-```}
+query.getObjectInBackground(withId: "xWMyZEGZ") { (User: PFObject?, error: Error?) in
+    if let error = error {
+        print(error.localizedDescription)
+    } else if let User = User {
+        User["ingredients"].append([cell.newIngredient.text, cell.quantity.text])
+        User.saveInBackground()
+    }
+}
+```
   
 * Social Media Feed (Optional)
   * (Read/GET) Query all posts by all users
