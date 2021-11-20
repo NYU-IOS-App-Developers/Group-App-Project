@@ -189,6 +189,19 @@ Our target audience is college students who want to learn how to cook healthy me
   * (Read/GET) Query information about logged in user object
   * (Read/GET) Query information about user XP level and points
   * (Update/PUT) Update user profile image
+```    let query = PFQuery(className:"User")
+query.getObjectInBackground(withId: "xWMyZEGZ") { (User: PFObject?, error: Error?) in
+    if let error = error {
+        print(error.localizedDescription)
+    } else if let User = User {
+        // image is saved in separate table/object
+        let imageData = imageView.image!.pngData()
+        let file = PFFileObject(name: "image.png", data: imageData!)
+        User["profilePic"] = file
+        User.saveInBackground()
+    }
+}
+```
   * (Update/PUT) Update user bio
   
 ```    let query = PFQuery(className:"User")
@@ -238,7 +251,29 @@ query.getObjectInBackground(withId: "xWMyZEGZ") { (User: PFObject?, error: Error
   * (Delete) Delete existing comment 
 * Creation Screen
   * (Create/POST) Create a new post object with caption
-
+```let post = PFObject(className: "Posts")
+        
+        post["caption"] = commentField.text!
+        post["author"] = PFUser.current()!
+        
+        // an image (a binary object) is stored as a url
+        
+        // image is saved in separate table/object
+        let imageData = imageView.image!.pngData()
+        let file = PFFileObject(name: "image.png", data: imageData!)
+        
+        post["image"] = file // storing url to file
+        
+        post.saveInBackground { (success, error) in
+            if success {
+                self.dismiss(animated: true, completion: nil)
+                print("saved!")
+            } else {
+                print("error!")
+            }
+            
+        }
+```
 
 
 ## Wireframes
