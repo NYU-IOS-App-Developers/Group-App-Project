@@ -189,7 +189,8 @@ Our target audience is college students who want to learn how to cook healthy me
   * (Read/GET) Query information about logged in user object
   * (Read/GET) Query information about user XP level and points
   * (Update/PUT) Update user profile image
-```    let query = PFQuery(className:"User")
+```    
+     let query = PFQuery(className:"User")
 query.getObjectInBackground(withId: "xWMyZEGZ") { (User: PFObject?, error: Error?) in
     if let error = error {
         print(error.localizedDescription)
@@ -204,7 +205,8 @@ query.getObjectInBackground(withId: "xWMyZEGZ") { (User: PFObject?, error: Error
 ```
   * (Update/PUT) Update user bio
   
-```    let query = PFQuery(className:"User")
+```    
+    let query = PFQuery(className:"User")
 query.getObjectInBackground(withId: "xWMyZEGZ") { (User: PFObject?, error: Error?) in
     if let error = error {
         print(error.localizedDescription)
@@ -215,7 +217,8 @@ query.getObjectInBackground(withId: "xWMyZEGZ") { (User: PFObject?, error: Error
 }
 ```
   * (Update/PUT) Update user dietary restrictions, nutrition goals, time commitment
-```    let query = PFQuery(className:"User")
+```    
+   let query = PFQuery(className:"User")
 query.getObjectInBackground(withId: "xWMyZEGZ") { (User: PFObject?, error: Error?) in
     if let error = error {
         print(error.localizedDescription)
@@ -232,7 +235,8 @@ query.getObjectInBackground(withId: "xWMyZEGZ") { (User: PFObject?, error: Error
 * Fridge List Screen
   * (Read/GET) Query list of ingredient and quantity user has
   * (Update/PUT) User can add a new ingredient and/or change the quantity
-```      let query = PFQuery(className:"User")
+```      
+    let query = PFQuery(className:"User")
 query.getObjectInBackground(withId: "xWMyZEGZ") { (User: PFObject?, error: Error?) in
     if let error = error {
         print(error.localizedDescription)
@@ -251,7 +255,8 @@ query.getObjectInBackground(withId: "xWMyZEGZ") { (User: PFObject?, error: Error
   * (Delete) Delete existing comment 
 * Creation Screen
   * (Create/POST) Create a new post object with caption
-```let post = PFObject(className: "Posts")
+```
+    let post = PFObject(className: "Posts")
         
         post["caption"] = commentField.text!
         post["author"] = PFUser.current()!
