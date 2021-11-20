@@ -119,6 +119,18 @@ Our target audience is college students who want to learn how to cook healthy me
 | user_xp              | int    | User’s number of points that they accumulate for unlocking new recipes. |
 
 
+#### Recipe
+| Property                | Type       | Description                                                                                                                                                                      |
+|-------------------------|------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| recipe_image            | file       | The recipe’s image                                                                                                                                                               |
+| recipe_title            | string     | The recipe’s name                                                                                                                                                                |
+| recipe_course           | string     | Tells which type of course the recipe belongs to (breakfast/lunch/dinner/appetizer/salad/dessert)                                                                                |
+| recipe_time             | int        | The time needed to cook the meal from the recipe (measured in minutes)                                                                                                           |
+| recipe_diet_dict        | dictionary | The dictionary contains the names of the dietary restrictions that are satisfied by the recipe (kosher/halal/vegetarian/vegan/low carb/dairy-free/keto/gluten-free/lactose free) |
+| recipe_ingredients_dict | dictionary | The dictionary contains the recipe’s ingredients                                                                                                                                 |
+| recipe_directions       | string     | The recipe step by step description                                                                                                                                              |
+
+
 ### 5. Networking
 * Login Screen
   * (Read/GET) Query logged in user object (if already logged in)
