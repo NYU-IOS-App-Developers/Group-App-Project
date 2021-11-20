@@ -100,7 +100,26 @@ Our target audience is college students who want to learn how to cook healthy me
 * Recipe Feed -> Recipe Section
 * Social Media Feed -> Creation Screen
 
-### 4. Networking
+
+### 4. Models
+
+#### User
+| Property             | Type   | Description                                                             |
+|----------------------|--------|-------------------------------------------------------------------------|
+| user_first_name      | string | User’s first name.                                                      |
+| user_last_name       | string | User’s last name.                                                       |
+| username             | string | A username that the user will use to log in.                            |
+| user_password        | string | Password to access user’s account.                                      |
+| userID               | int    | Unique id for every user.                                               |
+| user_phone_number    | string | User’s phone number.                                                    |
+| user_email           | string | User’s email address.                                                   |
+| isLoggedIn           | bool   | Tells whether a user is currently logged in or logged out.              |
+| user_profile_picture | file   | User’s profile picture which is uploaded from the user’s photo gallery  |
+| user_bio_info        | string | User’s short self-description. Max 100 characters long.                 |
+| user_xp              | int    | User’s number of points that they accumulate for unlocking new recipes. |
+
+
+### 5. Networking
 * Login Screen
   * (Read/GET) Query logged in user object (if already logged in)
 * Registration Screen
