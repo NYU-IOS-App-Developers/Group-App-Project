@@ -172,6 +172,7 @@ Our target audience is college students who want to learn how to cook healthy me
 ### 5. Networking
 * Login Screen
   * (Read/GET) Query logged in user object (if already logged in)
+  * (Read/GET) Check if user already exists in database
 * Registration Screen
   * (Create/POST) Create a new user that information will be associated with
 * Recipe Section Result Screen
@@ -181,6 +182,7 @@ Our target audience is college students who want to learn how to cook healthy me
 * Recipe Feed 
   * (Read/GET) Query different section thumbnails and text about different recipes
 * Recipe Search Result Screen
+  * (Read/GET) Search for all recipes that has given search phrase in title of meal
   * (Read/GET) Read search result and query different recipes based on search result
 * Recipe Generate Result Screen
   * (Read/GET) Query different recipes based on list of ingredients from fridge list
