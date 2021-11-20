@@ -130,6 +130,42 @@ Our target audience is college students who want to learn how to cook healthy me
 | recipe_ingredients_dict | dictionary | The dictionary contains the recipe’s ingredients                                                                                                                                 |
 | recipe_directions       | string     | The recipe step by step description                                                                                                                                              |
 
+#### Fridge_List
+| Property                | Type       | Description                                                                                          |
+|-------------------------|------------|------------------------------------------------------------------------------------------------------|
+| firdge_list_id          | int        | Unique id to access a certain fridge list.                                                           |
+| fridge_ingredients_dict | dictionary | The dictionary contains ingredients and their corresponding quantities. Ex. {“egg”:10, “potato”: 15} |
+
+
+#### Post
+| Property            | Type            | Description                                |
+|---------------------|-----------------|--------------------------------------------|
+| postID              | int             | Post’s unique id                           |
+| post_image          | file            | Post’s image                               |
+| post_author         | pointer to User | Pointer to the user who published the post |
+| post_caption        | string          | Post’s caption                             |
+| post_created_at     | dateTime        | Date and time when the post was created.   |
+| post_likes_count    | int             | Number of post’s likes                     |
+| post_comments_count | int             | Number of post’s comments                  |
+
+
+#### Like
+| Property    | Type                | Description                              |
+|-------------|---------------------|------------------------------------------|
+| likeID      | int                 | Like’s unique id                         |
+| isLikeOn    | bool                | Tells whether the like is enabled or not |
+| like_author | pointer to the User | Pointer to the user who gave the like.   |
+
+
+#### Comment 
+| Property          | Type                | Description                                 |
+|-------------------|---------------------|---------------------------------------------|
+| commentID         | int                 | Comment’s unique id                         |
+| comment_text      | string              | Comment’s content                           |
+| comment_author    | pointer to the User | Pointer to the user who wrote the comment.  |
+| comment_createdAt | dateTime            | Date and time when the comment was created. |
+
+
 
 ### 5. Networking
 * Login Screen
