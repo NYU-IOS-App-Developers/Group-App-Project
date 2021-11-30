@@ -12,13 +12,14 @@
 		CEAFCD22C1237C518A0F0DCB /* Pods_CookingApp_CookingAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9640F2A6069744CD7EF3D834 /* Pods_CookingApp_CookingAppUITests.framework */; };
 		CF2785DB274EFB8B0016E23B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2785DA274EFB8B0016E23B /* AppDelegate.swift */; };
 		CF2785DD274EFB8B0016E23B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2785DC274EFB8B0016E23B /* SceneDelegate.swift */; };
-		CF2785DF274EFB8B0016E23B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2785DE274EFB8B0016E23B /* ViewController.swift */; };
 		CF2785E2274EFB8B0016E23B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF2785E0274EFB8B0016E23B /* Main.storyboard */; };
 		CF2785E4274EFB8F0016E23B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF2785E3274EFB8F0016E23B /* Assets.xcassets */; };
 		CF2785E7274EFB8F0016E23B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF2785E5274EFB8F0016E23B /* LaunchScreen.storyboard */; };
 		CF2785F2274EFB900016E23B /* CookingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2785F1274EFB900016E23B /* CookingAppTests.swift */; };
 		CF2785FC274EFB900016E23B /* CookingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2785FB274EFB900016E23B /* CookingAppUITests.swift */; };
 		CF2785FE274EFB900016E23B /* CookingAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2785FD274EFB900016E23B /* CookingAppUITestsLaunchTests.swift */; };
+		CFBC6C482756CB36000252FE /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBC6C472756CB36000252FE /* RegisterViewController.swift */; };
+		CFBC6C4A2756CD32000252FE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBC6C492756CD32000252FE /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +52,6 @@
 		CF2785D7274EFB8B0016E23B /* CookingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF2785DA274EFB8B0016E23B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF2785DC274EFB8B0016E23B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CF2785DE274EFB8B0016E23B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CF2785E1274EFB8B0016E23B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CF2785E3274EFB8F0016E23B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF2785E6274EFB8F0016E23B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,6 +61,8 @@
 		CF2785F7274EFB900016E23B /* CookingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CookingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF2785FB274EFB900016E23B /* CookingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookingAppUITests.swift; sourceTree = "<group>"; };
 		CF2785FD274EFB900016E23B /* CookingAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookingAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CFBC6C472756CB36000252FE /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		CFBC6C492756CD32000252FE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +103,6 @@
 				C158FDB4C9CFF77D4000A2ED /* Pods-CookingAppTests.debug.xcconfig */,
 				98975D03009DCC0557EDF1F7 /* Pods-CookingAppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -132,11 +133,12 @@
 			children = (
 				CF2785DA274EFB8B0016E23B /* AppDelegate.swift */,
 				CF2785DC274EFB8B0016E23B /* SceneDelegate.swift */,
-				CF2785DE274EFB8B0016E23B /* ViewController.swift */,
 				CF2785E0274EFB8B0016E23B /* Main.storyboard */,
 				CF2785E3274EFB8F0016E23B /* Assets.xcassets */,
 				CF2785E5274EFB8F0016E23B /* LaunchScreen.storyboard */,
 				CF2785E8274EFB8F0016E23B /* Info.plist */,
+				CFBC6C472756CB36000252FE /* RegisterViewController.swift */,
+				CFBC6C492756CD32000252FE /* LoginViewController.swift */,
 			);
 			path = CookingApp;
 			sourceTree = "<group>";
@@ -407,9 +409,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF2785DF274EFB8B0016E23B /* ViewController.swift in Sources */,
+				CFBC6C4A2756CD32000252FE /* LoginViewController.swift in Sources */,
 				CF2785DB274EFB8B0016E23B /* AppDelegate.swift in Sources */,
 				CF2785DD274EFB8B0016E23B /* SceneDelegate.swift in Sources */,
+				CFBC6C482756CB36000252FE /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
