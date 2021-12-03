@@ -285,5 +285,5 @@ query.getObjectInBackground(withId: "xWMyZEGZ") { (User: PFObject?, error: Error
 <img src="https://i.imgur.com/2vFN8hC.gif" width=400><br>
 
 
-[Unit 11](https://i.imgur.com/Mw8V7JT.gifv)
+<img src="https://i.imgur.com/Mw8V7JT.gifv" width=400><br>
 
